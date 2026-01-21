@@ -87,8 +87,8 @@ func (v Validator) validateSchema(src io.Reader) error {
 		if err != nil {
 			return fmt.Errorf("could not read spec file %s: %w", file.Name(), err)
 		}
-		defer specFile.Close()
 		spec, err := jsonschema.UnmarshalJSON(specFile)
+		specFile.Close()
 		if err != nil {
 			return fmt.Errorf("could not decode spec file %s: %w", file.Name(), err)
 		}
