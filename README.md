@@ -10,11 +10,11 @@ The OCI Image Format project creates and maintains the software shipping contain
 This repository also provides [Go types](specs-go), [intra-blob validation tooling, and JSON Schema](schema).
 The Go types and validation should be compatible with the current Go release; earlier Go releases are not supported.
 
-Additional documentation:
+Additional technical guides:
 
 - [Multi-Architecture Image Build Best Practices](multi-arch-best-practices.md)
 
-Additional documentation about how this group operates:
+Documentation about how this group operates:
 
 - [Code of Conduct][code-of-conduct]
 - [Roadmap](#roadmap)

@@ -146,10 +146,10 @@ docker run --rm myimage:arm64
 
 ### Inspecting Multi-Arch Images
 
-Use `docker buildx imagetools` to inspect the manifest list:
+Use `docker buildx imagetools` to inspect the image index (Docker CLI refers to this as a "manifest list"):
 
 ```bash
-# View the manifest list
+# View the image index
 docker buildx imagetools inspect myregistry/myimage:latest
 ```
 
