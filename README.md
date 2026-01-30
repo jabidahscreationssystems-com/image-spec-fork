@@ -14,7 +14,7 @@ Additional documentation:
 
 - [Multi-Architecture Image Build Best Practices](multi-arch-best-practices.md)
 
-Documentation about how this group operates:
+Additional documentation about how this group operates:
 
 - [Code of Conduct][code-of-conduct]
 - [Roadmap](#roadmap)

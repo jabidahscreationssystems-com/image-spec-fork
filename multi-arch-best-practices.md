@@ -206,16 +206,17 @@ ARG TARGETARCH
 
 RUN case "${TARGETARCH}" in \
       amd64) \
-        # Map to various naming conventions
-        ARCH_ALT1="x86_64" \
-        ARCH_ALT2="amd64" \
-        ARCH_ALT3="x64" \
+        ARCH_ALT1="x86_64"; \
+        ARCH_ALT2="amd64"; \
+        ARCH_ALT3="x64"; \
         ;; \
       arm64) \
-        ARCH_ALT1="aarch64" \
-        ARCH_ALT2="arm64" \
+        ARCH_ALT1="aarch64"; \
+        ARCH_ALT2="arm64"; \
         ;; \
-    esac
+    esac && \
+    # Use the variables in subsequent commands
+    echo "Detected ${TARGETARCH}, alternatives: ${ARCH_ALT1}, ${ARCH_ALT2}"
 ```
 
 ### 4. Build-Time vs Runtime Architecture
